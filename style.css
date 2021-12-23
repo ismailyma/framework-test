@@ -35,9 +35,12 @@
 
 .navbar ul li {
   list-style: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   display: inline-block;
   margin: 0 20px;
-  position: relative;
 }
 
 .navbar ul li a {
@@ -49,11 +52,61 @@
 @media screen and (min-width: 0px) and (max-width: 812px) {
   .navbar ul li {
     display: none;
-  } /* hide it elsewhere */
+  } /* hide navbar li */
 }
 
 @media screen and (min-width: 812px) and (max-width: 2012px) {
   .nav-menu {
     display: none;
-  } /* hide it elsewhere */
+  } /* show navbar menu */
+}
+
+.landing-title {
+  color: #fff;
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 120px;
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+
+.landing-paragraph {
+  color: #fff;
+  font-weight: 125;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+
+.landing-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.try-for-free-button {
+  background-color: #4452fe;
+  color: #fff;
+  border: 1px solid #4452fe;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.learn-more-button {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
