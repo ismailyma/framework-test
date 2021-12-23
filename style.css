@@ -45,3 +45,15 @@
   color: #fff;
   text-transform: capitalize;
 }
+
+@media screen and (min-width: 0px) and (max-width: 812px) {
+  .navbar ul li {
+    display: none;
+  } /* hide it elsewhere */
+}
+
+@media screen and (min-width: 812px) and (max-width: 2012px) {
+  .nav-menu {
+    display: none;
+  } /* hide it elsewhere */
+}
