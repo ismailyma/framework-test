@@ -14,14 +14,18 @@
 //NAVBAR
 
 .navbar {
-  width: 85%;
+  width: 95%;
   height: 20vh;
   margin: auto;
   padding: 35px 100;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  // justify-content: space-around;
 }
+
+// .nav-logo {
+//   float: left;
+// }
 
 .nav-button {
   background-color: transparent;
@@ -55,16 +59,21 @@
   text-transform: capitalize;
 }
 
-@media screen and (min-width: 0px) and (max-width: 812px) {
+@media screen and (min-width: 0px) and (max-width: 880px) {
   .navbar ul li {
     display: none;
   } /* hide navbar li */
 }
 
-@media screen and (min-width: 812px) and (max-width: 2012px) {
+@media screen and (min-width: 880px) and (max-width: 2012px) {
   .nav-menu {
     display: none;
   } /* show navbar menu */
+}
+
+.nav-menu {
+  right: 0;
+  top: 0;
 }
 
 //LANDING
@@ -708,16 +717,18 @@
   letter-spacing: 0.2px;
 }
 
-.partners-logos-1 {
+.logos-1,
+.logos-2 {
   display: flex;
   align-items: center;
   justify-content: center;
   list-style-type: none;
-  float: left;
+  // float: left;
   // margin: 20px;
   // padding: 20px;
 }
-.partners-logos-2 {
+
+.partners-logos {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -726,20 +737,9 @@
 
 @media screen and (min-width: 0px) and (max-width: 812px) {
   .partners-logos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    height: auto;
-    // padding: 0px;
-
-    // position: static;
-    // width: 286px;
-    // height: 171.55px;
-    // left: 131.5px;
-    // top: 292px;
-
-    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -753,31 +753,34 @@
   font-size: 16px;
   transition-duration: 0.4s;
   cursor: pointer;
-  margin: 0;
+  margin: 50px 0px;
   position: absolute;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
-.apple {
-  margin: 30px 44px;
-}
-.apiary {
+.apple,
+.apiary,
+.android,
+.basecamp,
+.airbnb,
+.ibm {
   margin: 30px 44px;
 }
 
-.android {
-  margin: 30px 44px;
-}
-.basecamp {
-  margin: 30px 44px;
-}
-.airbnb {
-  margin: 30px 44px;
-}
-.ibm {
-  margin: 30px 44px;
+@media screen and (min-width: 0px) and (max-width: 812px) {
+  .apple,
+  .apiary,
+  .android,
+  .basecamp,
+  .airbnb,
+  .ibm {
+    margin: 10px 160px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 //testimonials
@@ -950,11 +953,11 @@
 }
 
 .cta-header {
-  position: static;
-  left: 2%;
-  right: 2%;
-  top: 0%;
-  bottom: 0%;
+  // position: static;
+  // left: 2%;
+  // right: 2%;
+  // top: 0%;
+  // bottom: 0%;
 
   /* Second Headline */
 
@@ -975,7 +978,7 @@
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 61.5px;
+  margin: 0px;
   background-color: #343434 !important;
 }
 
@@ -992,10 +995,10 @@
   cursor: pointer;
   position: static;
   width: 232px;
-  height: 52px;
-  left: 94px;
-  top: 178px;
-  margin: 61.5px;
+  // height: 52px;
+  // left: 94px;
+  // top: 178px;
+  // margin: 61.5px;
   overflow: hidden;
 }
 
@@ -1008,7 +1011,84 @@
   background-color: #343434 !important;
   // width: 589px;
   // height: 364px;
-  float: right;
+  // float: right;
+  width: 30%;
+  // float: inline-start;
+  // position: fixed;
+  left: 620px;
+  top: 17px;
+}
+
+@media screen and (min-width: 933px) and (max-width: 2012px) {
+  .mobile-cta-img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 933px) {
+  // .cta {
+  //   border: none;
+  //   border-radius: 0px;
+  //   background-color: #181818 !important;
+  // }
+
+  // .cta-btn {
+  //   display: none;
+  // }
+  // .cta-img {
+  //   background-color: #181818 !important;
+  // }
+  // .cta-header {
+  //   display: none;
+  // }
+
+  .cta-section {
+    background-color: #1e1e1e !important;
+  }
+  // .cta,
+  // .cta-btn,
+  .cta-img {
+    display: none;
+    border: none;
+    border-radius: 0px;
+    background-color: #181818 !important;
+  }
+  .cta {
+    border: 0px !important;
+    border-radius: 0px !important;
+    background-color: #1e1e1e !important;
+  }
+  .cta-header {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 31px;
+
+    white-space: initial;
+    text-align: center;
+    border: 0px;
+    border-radius: 0px;
+    background-color: #1e1e1e !important;
+  }
+  .cta-btn {
+    border: none;
+    border-radius: 0px;
+    background-color: #4452fe !important;
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mobile-cta-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #1e1e1e !important;
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
 }
 
 //FOOTER
