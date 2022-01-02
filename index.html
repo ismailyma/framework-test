@@ -12,7 +12,7 @@
 </head>
     <header>
         <div class="navbar">
-            <img  src="./images/logos/figma-logo.svg" class ="nav-logo">
+            <img  src="./images/logos/figma.svg" class ="nav-logo">
                 <ul>
                      <li class="nav-links">
                         <a href="#">Home</a></li>
@@ -24,6 +24,32 @@
                 <a href="#"><button class="nav-button">Login</button></a>
                 <img src="./images/menu.svg" class="nav-menu">
         </div>
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img class="navbar-brand" src="./images/logos/figma-logo.svg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Product</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <button class="btn btn-outline-secondary" type="submit">Login</button>
+              </form>
+            </div>
+          </nav> -->
     </header>
     <section class="landing">
         <div class="landing-title">
@@ -43,7 +69,8 @@
         </div>
         &nbsp;
         <div class="landing-img">
-            <img src="./images/screens.png" class="screen-images">
+            <img src="./images/screens.svg" class="screen-images">
+            <!-- <img src="./images/screens-mobile.svg" class="screen-images"> -->
         </div>
     </section>
     <section class="features">
@@ -53,7 +80,7 @@
             <P class="features-paragraph">Most calendars are designed for <br> teams. Slate is designed for freelancers who want a simple way to plan their schedule.</P>
                 <br>
                 <div>
-                    <img class="frame" src="./images/Frame 19.svg" alt="">
+                    <img class="frame" src="./images/Frame.svg" >
                     <ul class="frame-text">
                         <li class="frame-header"><img src="./images/icons/restaurant.svg">A single source of truth <br>
                             <p class="frame-paragraph">When you add work to your Slate calendar we automatically calculate useful insights
@@ -98,13 +125,19 @@
             <p class="gallery-paragraph">We focus on ergonomics and meeting you where you work. <br>It's only a keystroke away.</p>
             <div>
                 <div class="gallery-cards">
-                    <img src="./images/cards/Card.svg" alt="">
-                    <img src="./images/cards/Card-1.svg" alt="">
-                    <img src="./images/cards/Card-2.svg" alt="">
-                    <img src="./images/cards/Card-3.svg" alt="">
-                    <img src="./images/cards/Card-4.svg" alt="">
-                    <img src="./images/cards/Card-5.svg" alt="">
-                    <img src="./images/cards/Card-6.svg" alt="">
+                    <img src="./images/cards/Card.svg">
+                    <img src="./images/cards/Card-1.svg">
+                    <img src="./images/cards/Card-2.svg">
+                    <img src="./images/cards/Card-3.svg">
+                    <img src="./images/cards/Card-4.svg">
+                    <img src="./images/cards/Card-5.svg">
+                    <img src="./images/cards/Card-6.svg">
+                </div>
+                <div class="mobile-gallery-cards">
+                    <img class="mbl-card" src="./images/cards/mobile-card.svg" alt="">
+                    <img class="mbl-card-1" src="./images/cards/mobile-card-1.svg" alt="">
+                    <img class="mbl-card-2" src="./images/cards/mobile-card-2.svg" alt="">
+                    <img class="mbl-card-3" src="./images/cards/mobile-card-3.svg" alt="">
                 </div>
             </div>
             <button class="gallery-button">See more</button>
@@ -116,10 +149,12 @@
             <p class="partners-paragraph">We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
         </div>
         <div class="partners-logos">
-            <ul class="partners-logos">
+            <ul class="partners-logos-1">
                 <li><img class="apple" src="./images/logos/apple.svg"></li>
                 <li><img class="apiary" src="./images/logos/apiary.svg"></li>
                 <li><img class="android" src="./images/logos/android.svg"></li>
+            </ul>
+            <ul class="partners-logos-2">
                 <li><img class="basecamp" src="./images/logos/basecamp.svg"></li>
                 <li><img class="airbnb" src="./images/logos/airbnb.svg"></li>
                 <li><img class="ibm" src="./images/logos/ibm.svg"></li>
@@ -130,9 +165,9 @@
         </div>
     </section>
     <section class="testimonials">
-        <div>
+        <div class="testimonial-div">
             <h2 class="testimonials-header">Testimonials</h2>
-            <ul>
+            <ul class="testimonials-ul">
                 <li class="testimonial-1">
                     <img src="./images/icons/profile-pic.png">
                     <h3 class="name">Claire Bell</h3>
@@ -158,6 +193,13 @@
                     <p class="testimony">Slate helps you see how many more days you need to work to reach your financial goal for the month and year. Slate helps you see how many more days you need to work to reach your financial goal for the month and year.your financial goal for the month and year.</p>
                 </li>
             </ul>
+        </div>
+    </section>
+    <section class="cta-section">
+        <div class="cta">
+            <h3 class="cta-header">OpenType feature <br>and Variable fonts</h3>
+            <button class="cta-btn">Try For Free</button>
+            <img class="cta-img" src="./images/Line Chart.svg">
         </div>
     </section>
     <footer class="footer-clean">
