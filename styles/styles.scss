@@ -741,6 +741,12 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .logos-1,
+  .logos-2 {
+    padding: 0px;
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 
 .partners-button {
@@ -978,7 +984,7 @@
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 0px;
+  margin: 50px;
   background-color: #343434 !important;
 }
 
@@ -993,12 +999,10 @@
   font-size: 16px;
   transition-duration: 0.4s;
   cursor: pointer;
-  position: static;
+  position: relative;
   width: 232px;
-  // height: 52px;
-  // left: 94px;
-  // top: 178px;
-  // margin: 61.5px;
+  bottom: 150px;
+  left: 130px;
   overflow: hidden;
 }
 
@@ -1012,36 +1016,20 @@
   // width: 589px;
   // height: 364px;
   // float: right;
-  width: 30%;
+  width: 50%;
   // float: inline-start;
   // position: fixed;
-  left: 620px;
-  top: 17px;
+  left: 380px;
+  bottom: 230px;
 }
 
-@media screen and (min-width: 933px) and (max-width: 2012px) {
+@media screen and (min-width: 1207px) and (max-width: 2012px) {
   .mobile-cta-img {
     display: none;
   }
 }
 
-@media screen and (min-width: 0px) and (max-width: 933px) {
-  // .cta {
-  //   border: none;
-  //   border-radius: 0px;
-  //   background-color: #181818 !important;
-  // }
-
-  // .cta-btn {
-  //   display: none;
-  // }
-  // .cta-img {
-  //   background-color: #181818 !important;
-  // }
-  // .cta-header {
-  //   display: none;
-  // }
-
+@media screen and (min-width: 0px) and (max-width: 1207px) {
   .cta-section {
     background-color: #1e1e1e !important;
   }
@@ -1057,6 +1045,8 @@
     border: 0px !important;
     border-radius: 0px !important;
     background-color: #1e1e1e !important;
+    width: auto;
+    height: auto;
   }
   .cta-header {
     font-style: normal;
@@ -1078,6 +1068,7 @@
 
     margin-left: auto;
     margin-right: auto;
+    position: static;
   }
 
   .mobile-cta-img {
@@ -1085,7 +1076,7 @@
     margin-left: auto;
     margin-right: auto;
     background-color: #1e1e1e !important;
-    width: 70%;
+    width: 50%;
     margin-top: 20px;
     margin-bottom: 0px;
   }
@@ -1097,7 +1088,8 @@
   padding: 50px 0;
   background-color: #181818;
   color: #fff;
-  //   display: inline-block;
+  display: block;
+  position: sticky;
 }
 
 .footer-clean h3 {
