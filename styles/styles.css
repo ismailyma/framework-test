@@ -67,13 +67,13 @@
 }
 
 @media screen and (min-width: 880px) and (max-width: 2012px) {
-  .nav-menu {
+  .openbtn {
     display: none;
   }
   /* show navbar menu */
 }
 
-.nav-menu {
+.openbtn {
   right: 0;
   top: 0;
 }

@@ -66,12 +66,12 @@
 }
 
 @media screen and (min-width: 880px) and (max-width: 2012px) {
-  .nav-menu {
+  .openbtn {
     display: none;
   } /* show navbar menu */
 }
 
-.nav-menu {
+.openbtn {
   right: 0;
   top: 0;
 }
@@ -1169,3 +1169,13 @@
   top: 20px;
   float: left;
 }
+
+// #dropdown-menu {
+//   display: none;
+// }
+
+// @media screen and (min-width: 0px) and (max-width: 1207px) {
+//   #dropdown-menu {
+//     display: none;
+//   }
+// }
