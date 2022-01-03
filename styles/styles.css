@@ -132,7 +132,7 @@ button:hover {
 }
 
 .landing-paragraph {
-  font-weight: 125;
+  font-weight: 25;
   font-size: 20px;
   line-height: 30px;
   text-align: center;
@@ -1073,6 +1073,7 @@ button:hover {
     background-color: #1e1e1e !important;
     width: auto;
     height: auto;
+    margin-bottom: 100px;
   }
   .cta-header {
     font-style: normal;
